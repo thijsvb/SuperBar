@@ -10,7 +10,7 @@ int r;
 String title = "Super Bar";
 
 void setup(){
-  size(1750,1080);
+  orientation(LANDSCAPE);
   
   h = height/10;
   x[0] = width;
