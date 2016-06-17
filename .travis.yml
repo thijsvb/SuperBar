@@ -1,5 +1,4 @@
 language: java
-sudo: required
 # install: ant deps
 
 before_install:
@@ -8,10 +7,12 @@ before_install:
 script:
   - jdk_switcher use oraclejdk8
   # - ./build_processing.sh
-  - sudo ./SuperBar/download_processing.sh
-  - sudo ./SuperBar/build.sh
-  - sudo ./SuperBarMobile/download_processing.sh
-  - sudo ./SuperBarMobile/build.sh
+  - cd SuperBar
+  - ./download_processing.sh
+  - ./build.sh
+  - cd ../SuperBarMobile
+  - ./download_processing.sh
+  - ./build.sh
 
 after_failure:
   - find . | egrep "processing-java"
