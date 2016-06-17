@@ -1,0 +1,19 @@
+language: java
+# install: ant deps
+
+before_install:
+  - java -version
+
+script:
+  - jdk_switcher use oraclejdk8
+  # - ./build_processing.sh
+  - ./SuperBar/download_processing.sh
+  - ./SuperBar/build.sh
+  - ./SuperBarMobile/download_processing.sh
+  - ./SuperBarMobile/build.sh
+
+after_failure:
+  - find . | egrep "processing-java"
+
+after_success:
+  - find . | egrep "processing-java"
