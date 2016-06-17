@@ -1,5 +1,7 @@
 #Super Bar
 ###By Thijs van Beers
+[![Build Status](https://travis-ci.org/thijsvb/SuperBar.svg?branch=master)](https://travis-ci.org/thijsvb/SuperBar)
+
 Made in Processing
 
 A useless, time wasting game. No startscreen, no game-overscreen, no highscore, just playing.
