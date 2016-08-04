@@ -1,4 +1,3 @@
-
 #!/bin/bash
 myexe="./processing-3.1.1/processing-java"
 input_folder=${PWD##} 
