@@ -1,5 +1,6 @@
 language: java
 # install: ant deps
+sudo: require
 
 before_install:
   - java -version
