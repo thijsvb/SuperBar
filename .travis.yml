@@ -8,9 +8,9 @@ before_install:
 script:
   - jdk_switcher use oraclejdk8
   # - ./build_processing.sh
-  - cd SuperBar; ./download_processing.sh; ./build.sh
+  - cd SuperBar; chmod +x download_processing.sh; ./download_processing.sh; chmod +x build.sh; ./build.sh
   - cd ..
-  - cd SuperBarMobile; ./download_processing.sh; ./build.sh
+  - cd SuperBarMobile; chmod +x download_processing.sh; ./download_processing.sh; chmod +x build.sh; ./build.sh
   - cd ..
 
 after_failure:
